@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808"><meta name="description" content="Amir Travelers - Aapka safar hamari zimmedari. Plan your journey and contact us on WhatsApp.">
+<title>Amir Travelers | Aapka Safar Hamari Zimmedari</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar" id="home">
+  <a class="brand" href="#home" aria-label="Amir Travelers home">
+    <span class="brand-logo">AT</span><span><strong>AMIR <em>TRAVELERS</em></strong><small data-i18n="tagline">Aapka safar hamari zimmedari</small></span>
+  </a>
+  <nav class="nav"><a href="#home" data-i18n="home">Home</a><a href="#cars" data-i18n="carsNav">Cars</a><a href="#destinations" data-i18n="destNav">Destinations</a></nav>
+  <div class="head-actions"><button class="small-btn" id="langToggle">हिन्दी</button><button class="small-btn" id="themeToggle" aria-label="Toggle black theme">◐ Theme</button><button class="menu" id="menuBtn" aria-label="Open menu">☰</button></div>
+</header>
+<div class="menu-panel" id="menuPanel" hidden><a href="#home" data-i18n="home">Home</a><a href="#cars" data-i18n="carsNav">Cars</a><a href="#destinations" data-i18n="destNav">Destinations</a><button id="menuLang" data-i18n="changeLanguage">Change language</button><button id="menuTheme" data-i18n="changeTheme">Change theme</button></div>
+
+<main>
+<section class="hero">
+  <div class="hero-bg" role="img" aria-label="Travel cars on a road"></div><div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="eyebrow" data-i18n="welcome">WELCOME TO AMIR TRAVELERS</p>
+    <h1 data-i18n="heroTitle">Your journey,<br><em>our responsibility.</em></h1>
+    <p class="hero-sub" data-i18n="heroSub">Comfortable journeys, dependable service and memorable destinations.</p>
+    <div class="hero-buttons"><button class="gold-btn" id="bookingBtn" data-i18n="booking">Booking <span>↗</span></button><button class="outline-btn" id="shareBtn" data-i18n="share">Share ↗</button></div>
+    <div class="hero-points"><span>✓ <span data-i18n="safe">Safe & comfortable</span></span><span>✓ <span data-i18n="timely">On-time trips</span></span><span>✓ <span data-i18n="available">24×7 available</span></span></div>
+  </div>
+  <div class="live-users"><span class="live-dot"></span><strong data-i18n="liveUsers">live active users</strong> = <b id="userCount">128</b></div>
+</section>
+
+<section class="offers container" aria-label="First trip offers">
+  <button class="offer-banner active" data-offer="50" data-min="100"><span class="offer-kicker" data-i18n="firstTrip">FIRST TRIP OFFER</span><strong data-en="First trip of 100–199 km: ₹50 OFF" data-hi="पहली 100–199 km की ट्रिप पर ₹50 की छूट">First trip of 100–199 km: ₹50 OFF</strong><span class="offer-arrow">↗</span></button>
+  <button class="offer-banner" data-offer="100" data-min="200"><span class="offer-kicker" data-i18n="firstTrip">FIRST TRIP OFFER</span><strong data-en="First trip of 200–299 km: ₹100 OFF" data-hi="पहली 200–299 km की ट्रिप पर ₹100 की छूट">First trip of 200–299 km: ₹100 OFF</strong><span class="offer-arrow">↗</span></button>
+  <button class="offer-banner" data-offer="150" data-min="300"><span class="offer-kicker" data-i18n="firstTrip">FIRST TRIP OFFER</span><strong data-en="First trip of 300+ km: ₹150 OFF" data-hi="पहली 300+ km की ट्रिप पर ₹150 की छूट">First trip of 300+ km: ₹150 OFF</strong><span class="offer-arrow">↗</span></button>
+</section>
+
+<section class="qr-payment container" id="payment">
+  <div class="qr-copy"><p class="eyebrow dark" data-i18n="paymentTitle">PAYMENT INFORMATION</p><h2 data-i18n="qrHeading">Scan to pay with Google Pay</h2><p data-i18n="qrDesc">Our payment QR will be displayed here. Scan it only after confirming the booking details with Amir Travelers.</p><div class="payment-highlight" data-i18n="advance">25% advance payment is required to confirm your booking.</div><p class="refund-note" data-i18n="refund">Only 15% is refundable if you cancel your booking.</p></div>
+  <div class="qr-frame"><img src="assets/images/qr.png" alt="Google Pay QR code placeholder" id="paymentQR"><small data-i18n="replaceQR">Replace assets/images/qr.png with your own 1:1 Google Pay QR image.</small></div>
+</section>
+
+<section class="cars-section section" id="cars"><div class="container">
+  <p class="eyebrow dark" data-i18n="ourFleet">OUR FLEET</p><h2 data-i18n="carsHeading">Choose your <em>travel car</em></h2>
+  <div class="cars-grid">
+    <article class="car-card"><img src="assets/images/eeco.svg" alt="Maruti Suzuki Eeco"><div class="car-info"><h3>Maruti Suzuki Eeco</h3><p data-i18n="eecoDesc">Non-AC · Economy</p><div class="rate"><b>₹8/km</b><span data-i18n="driver800">+ ₹800 driver charge</span></div></div></article>
+    <article class="car-card"><img src="assets/images/xl6.svg" alt="Maruti Suzuki XL6"><div class="car-info"><h3>Maruti Suzuki XL6</h3><p>AC · Family MPV</p><div class="rate"><b>₹10/km</b><span>+ ₹1,000 driver charge</span></div></div></article>
+    <article class="car-card"><img src="assets/images/vitara-brezza.svg" alt="Vitara Brezza"><div class="car-info"><h3>Vitara Brezza</h3><p>AC · SUV</p><div class="rate"><b>₹10/km</b><span>+ ₹1,000 driver charge</span></div></div></article>
+    <article class="car-card"><img src="assets/images/brezza.svg" alt="Maruti Suzuki Brezza"><div class="car-info"><h3>Maruti Suzuki Brezza</h3><p>AC · SUV</p><div class="rate"><b>₹10/km</b><span>+ ₹1,000 driver charge</span></div></div></article>
+    <article class="car-card"><img src="assets/images/ertiga.svg" alt="Maruti Suzuki Ertiga"><div class="car-info"><h3>Maruti Suzuki Ertiga</h3><p>AC · 7-seater</p><div class="rate"><b>₹10/km</b><span>+ ₹1,000 driver charge</span></div></div></article>
+    <article class="car-card"><img src="assets/images/rumion.svg" alt="Toyota Rumion"><div class="car-info"><h3>Toyota Rumion</h3><p>AC · 7-seater</p><div class="rate"><b>₹10/km</b><span>+ ₹1,000 driver charge</span></div></div></article>
+  </div>
+</div></section>
+
+<section class="dest-section section" id="destinations"><div class="container"><p class="eyebrow" data-i18n="destEyebrow">PLACES TO EXPLORE</p><h2 data-i18n="destHeading">Journeys to <em>remember</em></h2><div class="dest-grid">
+  <div class="dest-card agra"><b>Agra</b></div><div class="dest-card mathura"><b>Mathura · Vrindavan</b></div><div class="dest-card varanasi"><b>Varanasi</b></div><div class="dest-card dwarka"><b>Dwarka</b></div><div class="dest-card ayodhya"><b>Ayodhya</b></div><div class="dest-card haridwar"><b>Haridwar · Rishikesh</b></div><div class="dest-card kanpur"><b>Kanpur</b></div><div class="dest-card etawah"><b>Etawah</b></div>
+</div></div></section>
+<section class="contact-section section"><div class="container contact-inner"><div><p class="eyebrow" data-i18n="contactUs">CONTACT US</p><h2 data-i18n="readyTrip">Ready for your next trip?</h2></div><div class="contact-buttons"><a href="tel:7451952707">☎ 7451952707</a><a href="tel:8007985771">☎ 8007985771</a><a href="https://wa.me/917451952707" target="_blank" rel="noopener">WhatsApp ↗</a></div></div></section>
+</main>
+
+<footer><div class="container footer-grid"><div><strong class="footer-brand">AMIR <em>TRAVELERS</em></strong><p data-i18n="tagline">Aapka safar hamari zimmedari</p><p>Instagram: <a href="https://instagram.com/amir_7451_" target="_blank" rel="noopener">@amir_7451_</a></p></div><div><strong data-i18n="creator">Website made by Karan</strong><p>Call / WhatsApp: <a href="tel:9870931288">9870931288</a></p><p>Telegram: <a href="https://t.me/9870931288" target="_blank" rel="noopener">9870931288</a></p><p>Instagram: <a href="https://instagram.com/itskarankamal" target="_blank" rel="noopener">@itskarankamal</a></p><p>Email: <a href="mailto:kamalkaran939@gmail.com">kamalkaran939@gmail.com</a></p></div></div><div class="copyright">© <span id="year"></span> Amir Travelers · <span data-i18n="ratesNote">Rates may change. Toll and parking extra.</span></div></footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<a class="float-wa" href="https://wa.me/917451952707" aria-label="WhatsApp Amir Travelers" target="_blank" rel="noopener">◉</a>
+
+<div class="modal-backdrop" id="shareModal" hidden><div class="modal share-modal" role="dialog" aria-modal="true" aria-labelledby="shareTitle"><button class="modal-x" data-close="shareModal" aria-label="Close">×</button><h2 id="shareTitle" data-i18n="shareTitle">Share Amir Travelers</h2><p data-i18n="shareDesc">Enter a phone number to share our website on WhatsApp.</p><label for="shareNumber" data-i18n="phoneNumber">Phone number</label><input id="shareNumber" type="tel" inputmode="tel" placeholder="e.g. 9876543210" autocomplete="tel"><button class="gold-btn wide" id="shareWhatsApp" data-i18n="shareWhatsApp">Share to WhatsApp ↗</button><small data-i18n="shareHint">WhatsApp will open with a ready-to-send message.</small></div></div>
+
+<div class="modal-backdrop" id="bookingModal" hidden><div class="modal booking-modal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle"><button class="modal-x" data-close="bookingModal" aria-label="Close">×</button><p class="eyebrow dark" data-i18n="bookingEyebrow">TRIP ENQUIRY</p><h2 id="bookingTitle" data-i18n="bookingTitle">Plan your trip</h2><div class="offer-note" id="offerNote" hidden></div>
+<form id="bookingForm"><div class="form-grid">
+<label><span data-i18n="name">Name *</span><input id="custName" required></label><label><span data-i18n="mobile">Mobile number *</span><input id="custMobile" type="tel" required></label>
+<label><span data-i18n="pickup">Pickup location *</span><input id="pickup" required></label><label><span data-i18n="destination">Destination *</span><input id="destination" required></label>
+<label><span data-i18n="tripType">Trip type</span><select id="tripType"><option value="One-way">One-way</option><option value="Full route / round trip">Full route / round trip</option></select></label><label><span data-i18n="distance">Total trip distance (km) *</span><input id="distance" type="number" min="1" step="1" required></label>
+<label><span data-i18n="carCount">Number of cars *</span><select id="carCount"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></label><label><span data-i18n="passengers">Passengers (optional)</span><input id="passengers" type="number" min="1"></label>
+<label><span data-i18n="travelDate">Travel date (optional)</span><input id="travelDate" type="date"></label><label><span data-i18n="extra">Additional info (optional)</span><input id="extra"></label>
+</div><div id="carChoices" class="car-choices"></div><div class="fare-box"><span data-i18n="estimatedFare">Estimated total fare</span><strong id="fareTotal">₹0</strong><small id="fareBreakdown">Enter distance and select vehicles.</small><div id="discountBox" class="discount-box" hidden><span data-i18n="potentialPrice">Potential price if eligible</span><strong id="discountedFare">₹0</strong><small id="discountText"></small></div></div><p class="form-guide" data-i18n="formGuide">कृपया Booking पर क्लिक करें। WhatsApp खुलने पर जानकारी जाँचें और Send बटन दबाएँ, ताकि आपकी booking request हमें मिल जाए।</p><button type="submit" class="gold-btn wide" data-i18n="continueWhatsApp">Continue with WhatsApp ↗</button></form></div></div>
+<script src="script.js"></script>
+</body></html>
